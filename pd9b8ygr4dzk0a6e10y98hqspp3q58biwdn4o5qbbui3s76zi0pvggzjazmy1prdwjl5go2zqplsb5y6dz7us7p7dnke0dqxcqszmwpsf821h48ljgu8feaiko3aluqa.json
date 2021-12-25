@@ -1,0 +1,472 @@
+{
+    "sessions":
+    {
+        "xyz": 0
+    },
+    "users": 
+    {
+        "0": 
+        {
+            "id": 0,
+            "name": "Martin",
+            "password": "$2y$10$J637h1XGllb0r0hemSi9DuXTo9WpiHtOnbAIo5gR8bKnh3JUNyphK",
+            "email": "info@martinnajemi.com",
+            "verified_email": true,
+            "badges":
+            [
+                "verified",
+                "staff"
+            ],
+            "created_at": 1593638992,
+            "recent_logins":
+            [
+                "192.168.0.1"
+            ],
+            "posts": 
+            [
+                0
+            ],
+            "followers":
+            [
+                1,
+                2,
+                69
+            ],
+            "following":
+            [
+                1,
+                2,
+                69
+            ],
+            "comments":
+            [
+                0
+            ],
+            "liked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    0,
+                    1,
+                    2,
+                    420
+                ]
+            },
+            "disliked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    
+                ]
+            }
+        },
+        "1": 
+        {
+            "id": 1,
+            "name": "MartinNaj",
+            "password": "$2y$10$J637h1XGllb0r0hemSi9DuXTo9WpiHtOnbAIo5gR8bKnh3JUNyphK",
+            "email": "info@martinnaj.com",
+            "verified_email": true,
+            "badges":
+            [
+                "verified",
+                "staff"
+            ],
+            "created_at": 1593638992,
+            "recent_logins":
+            [
+                "192.168.0.1"
+            ],
+            "posts": 
+            [
+                1
+            ],
+            "followers":
+            [
+                0,
+                2,
+                69
+            ],
+            "following":
+            [
+                0,
+                2,
+                69
+            ],
+            "comments":
+            [
+                1
+            ],
+            "liked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    0,
+                    1,
+                    2,
+                    420
+                ]
+            },
+            "disliked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    
+                ]
+            }
+        },
+        "2": 
+        {
+            "id": 2,
+            "name": "Admin",
+            "password": "$2y$10$hzjtlGKbJbzJgLkkOEwMfOShcHBlD1E1z.I1HSED3nH2BOrTuenj.",
+            "email": "info@hypent.net",
+            "verified_email": true,
+            "badges":
+            [
+                "verified",
+                "staff"
+            ],
+            "created_at": 1593638992,
+            "recent_logins":
+            [
+                "192.168.0.1"
+            ],
+            "posts": 
+            [
+                2
+            ],
+            "followers":
+            [
+                0,
+                1,
+                69
+            ],
+            "following":
+            [
+                0,
+                1,
+                69
+            ],
+            "comments":
+            [
+                2
+            ],
+            "liked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    0,
+                    1,
+                    2,
+                    420
+                ]
+            },
+            "disliked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    
+                ]
+            }
+        },
+        "69": 
+        {
+            "id": 69,
+            "name": "Plat",
+            "password": "$2y$10$hzjtlGKbJbzJgLkkOEwMfOShcHBlD1E1z.I1HSED3nH2BOrTuenj.",
+            "email": "pavlahrachovcova13@gmail.com",
+            "verified_email": true,
+            "badges":
+            [
+                "verified",
+                "staff"
+            ],
+            "created_at": 1593638992,
+            "recent_logins":
+            [
+                "192.168.0.1"
+            ],
+            "posts": 
+            [
+                69,
+                420
+            ],
+            "followers":
+            [
+                0,
+                1,
+                2
+            ],
+            "following":
+            [
+                0,
+                1,
+                2
+            ],
+            "comments":
+            [
+                69
+            ],
+            "liked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    0,
+                    1,
+                    2,
+                    420
+                ]
+            },
+            "disliked":
+            {
+                "comments":
+                [
+                    
+                ],
+                "posts":
+                [
+                    
+                ]
+            }
+        }
+    },
+    "posts":
+    {
+        "0":
+        {
+            "id": 0,
+            "author": 0,
+            "title": "This is my first post!",
+            "description": "This is my first description!",
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes":
+            [
+                
+            ],
+            "comments":
+            [
+                0
+            ]
+        },
+        "1": 
+        {
+            "id": 1,
+            "author": 0,
+            "title": "This is my first post!",
+            "description": "This is my first description!",
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes":
+            [
+                
+            ],
+            "comments":
+            [
+                1
+            ]
+        },
+        "2":
+        {
+            "id": 2,
+            "author": 2,
+            "title": "Welcome to HYPEN'T!",
+            "description": "Hypen't is a brand new online project that allows novice writers, journalists and philosophers to share their stories, articles and thoughts on a public wall where no visitor will pass by your ideas. The process of expressing yourself is very simple - click on the blank board that interests you, add a picture that suits your description and write your article. With our text editor, you can emphasize and highlight important words, all in one touch. We are waiting for a piece of you on Hypen't.",
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69                
+            ],
+            "dislikes":
+            [
+                
+            ],
+            "comments": 
+            [
+                2,
+                420
+            ]
+            
+        },
+        "69":
+        {
+            "id": 69,
+            "author": 69,
+            "title": "This is my first post!",
+            "description": "This is my first description!",
+            "time": 1593638702,
+            "likes":
+            [
+                1,
+                69
+            ],
+            "dislikes":
+            [
+                
+            ],
+            "comments": 
+            [
+                69
+            ]
+        },
+        "420":
+        {
+            "id": 420,
+            "author": 69,
+            "title": "This is my second post!",
+            "description": "This is my second description!",
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                69
+            ],
+            "dislikes":
+            [
+                
+            ],
+            "comments": 
+            [
+                
+            ]
+        }
+    },
+    "comments":
+    {
+        "0":
+        {
+            "id": 0,
+            "author": 0,
+            "content": "This is my first comment on my first post.",
+            "time": 1593638702,
+            "likes":
+            [
+                0
+            ],
+            "dislikes": 
+            [
+                69
+            ]
+        },
+        "1":
+        {
+            "id": 1,
+            "author": 1,
+            "content": "My username should be 'MartinNaj' and not 'Martin' :)",
+            "post": 1,
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes": 
+            [
+                
+            ]
+        },
+        "2":
+        {
+            "id": 2,
+            "author": 1,
+            "content": "My username should be 'MartinNaj' and not 'Martin' :)",
+            "post": 2,
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes": 
+            [
+                
+            ]
+        },
+        "69":
+        {
+            "id": 69,
+            "author": 1,
+            "content": "Fuck You",
+            "post": 69,
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes": 
+            [
+                
+            ]
+        },
+        "420":
+        {
+            "id": 420,
+            "author": 1,
+            "content": "Fuck Me",
+            "post": 2,
+            "time": 1593638702,
+            "likes":
+            [
+                0,
+                1,
+                2,
+                69
+            ],
+            "dislikes": 
+            [
+                
+            ]
+        }
+    }
+}

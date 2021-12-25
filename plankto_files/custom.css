@@ -1,0 +1,23 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.post{
+    max-width:500px;
+}
+
+.round{
+    border-radius:20px;
+    
+}
+.inset-shadow{
+    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,1);
+}
+img {
+  opacity: 0.8;
+  
+}

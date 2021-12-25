@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Hypen't</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://hypent.net/new/css/simplemdm.css">
+        <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+        <link href="https://colorlib.com/etc/lf/Login_v3/fonts/iconic/css/material-design-iconic-font.min.css"
+      rel="stylesheet">  
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <style>
+          .zmdi:focus { outline: none; 
+          }
+          .zmdi{
+              font-size:200% ;
+          }
+          .eye{
+            pointer-events:auto !important;   
+            background: #fff;
+            border-color: transparent;
+            text-shadow: inherit;
+          }
+          body{
+              color:white!important;
+               background:#1f2835!important;
+          }
+          .CodeMirror{
+              background:#242F3F;
+               color:white;
+              /*max-height: 100%;*/
+          }
+          .editor-toolbar{
+             background:#19222e!important;
+             border:0!important;
+          }
+          .editor-toolbar a{
+              color:#fff;
+          }
+          .zmdi{
+              background:#1f2835!important;
+          }
+        </style>
+    </head>
+    <body id="Body">
+        <table style="width:100%; height: 100%;">
+            <td style="width: 100%; height: 100%;">
+                <textarea id="editor"></textarea>
+            </td>
+            <td style="width: 50%;" id="previewSection">
+                
+            </td>
+        </table>
+        <script>
+            var simplemde = new SimpleMDE(
+                {
+                    autoDownloadFontAwesome: false,
+                    autofocus: true,
+                    autosave: {
+                        enabled: true,
+                        uniqueId: "UniqueID",
+                        delay: 1000,
+                    },
+                    blockStyles: {
+                        bold: "**",
+                        italic: "*",
+                        italic: "_",
+                        underline: "__",
+                        strikethrough: "~~",
+                    },
+                    element: document.getElementById("editor"),
+                    forceSync: true,
+                    hideIcons: ["guide", "heading"],
+                    indentWithTabs: true,
+                    initialValue: "",
+                    insertTexts: {
+                        horizontalRule: ["", "\n---\n"],
+                        link: ["[", "](http://)"]
+                    },
+                    lineWrapping: true,
+                    parsingConfig: {
+                        allowAtxHeaderWithoutSpace: true,
+                        strikethrough: true,
+                        underscoresBreakWords: true,
+                    },
+                    placeholder: "Just start...",
+                    previewRender: function(plainText, preview) {
+                        if (document.getElementsByClassName("eye")[0].className == "zmdi zmdi-eye-off eye") {
+                            document.getElementsByClassName("eye")[0].className = "zmdi zmdi-eye eye"
+                        }else{
+                            document.getElementsByClassName("eye")[0].className = "zmdi zmdi-eye-off eye"
+                        }
+                        return marked(plainText);
+                    },
+                    promptURLs: false,
+                    renderingConfig: {
+                        singleLineBreaks: false,
+                        codeSyntaxHighlighting: true,
+                    },
+                    shortcuts: {
+                        //drawTable: "Cmd-Alt-T"
+                    },
+                    showIcons: ["code", "table"],
+                    spellChecker: false,
+                    status: ["autosave", "lines", "words", "cursor", {
+                        className: "keystrokes",
+                        defaultValue: function(el) {
+                            this.keystrokes = 0;
+                            el.innerHTML = "0 Keystrokes";
+                        },
+                        onUpdate: function(el) {
+                            el.innerHTML = ++this.keystrokes + " Keystrokes";
+                        }
+                    }],
+                    styleSelectedText: false,
+                    tabSize: 4,
+                    toolbar: [
+                        {
+                            name: "bold",
+                            action: SimpleMDE.toggleBold,
+                            className: "zmdi zmdi-format-bold",
+                            title: "Bold",
+                        },
+                        {
+                            name: "italic",
+                            action: SimpleMDE.toggleItalic,
+                            className: "zmdi zmdi-format-italic",
+                            title: "Italic",
+                        },
+                        {
+                            name: "strikethrough",
+                            action: SimpleMDE.toggleStrikethrough,
+                            className: "zmdi zmdi-format-strikethrough",
+                            title: "Strikethrough",
+                        },
+                        {
+                            name: "heading-smaller",
+                            action: SimpleMDE.toggleHeadingSmaller,
+                            className: "zmdi zmdi-format-size",
+                            title: "Heading",
+                        },
+                        {
+                            name: "code",
+                            action: SimpleMDE.toggleCodeBlock,
+                            className: "zmdi zmdi-code",
+                            title: "Code",
+                        },
+                        {
+                            name: "quote",
+                            action: SimpleMDE.toggleBlockquote,
+                            className: "zmdi zmdi-quote",
+                            title: "Quote",
+                        },
+                        {
+                            name: "horizontal-rule",
+                            action: SimpleMDE.drawHorizontalRule,
+                            className: "zmdi zmdi-minus",
+                            title: "Horizontal-rule",
+                        },
+                        {
+                            name: "preview",
+                            action: SimpleMDE.togglePreview,
+                            className: "zmdi zmdi-eye zmdi-eye-off eye",
+                            title: "Toggle Preview",
+                        },
+                    ],
+                    toolbarTips: true,
+                }
+            );
+        </script>
+    </body>
+</html>
